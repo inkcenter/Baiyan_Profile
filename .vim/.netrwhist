@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/rsh/Desktop/run_area/dc/s9234/tcl'
+let g:netrw_dirhist_2='/home/rsh/Desktop/run_area/icc/s9234'
+let g:netrw_dirhist_3='/home/rsh/Desktop/run_area/hs/s9234/work2'
+let g:netrw_dirhist_4='/home/rsh/Desktop/run_area/hs/s9234'
