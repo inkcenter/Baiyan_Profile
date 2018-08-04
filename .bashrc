@@ -37,11 +37,19 @@ export PATH=/root/simulation/install_path/synopsys/hs/hspice/bin:$PATH
 
 export PATH=/root/simulation/install_path/synopsys/ic/bin:$PATH
 
-#export VCS_HOME="/root/simulation/install_path/synopsys/vcs"
+##############################################################################
+export VCS_HOME="/root/simulation/install_path/synopsys/vcs"
+export PATH=$VCS_HOME/amd64/bin:$PATH
+export PATH=$VCS_HOME/bin:$PATH
+##############################################################################
+export NOVAS_HOME="/root/simulation/install_path/synopsys/vd"
+export PATH=$NOVAS_HOME/bin:$PATH
 
-export PATH=/root/simulation/install_path/synopsys/vcs/amd64/bin:$PATH
-
-export PATH=/root/simulation/install_path/synopsys/vcs/bin:$PATH
+export LD_LIBRARY_PATH=$NOVAS_HOME/share/PLI/VCS/LINUX64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NOVAS_HOME/share/PLI/IUS/LINUX64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NOVAS_HOME/share/PLI/lib/LINUX64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$NOVAS_HOME/share/PLI/MODELSIM/LINUX64:$LD_LIBRARY_PATH
+##############################################################################
 
 export PATH=/root/simulation/install_path/synopsys/tx/bin:$PATH
 
@@ -49,8 +57,6 @@ export PATH=/root/simulation/install_path/synopsys/customsim/bin:$PATH
 
 #export PATH=$SYNOPSYS/bin:$PATH
 export STILDPV_HOME=$SYNOPSYS/amd64/stildpv
-
-
 
 alias ic="icc_shell -gui"
 alias pt="pt_shell  -gui"
