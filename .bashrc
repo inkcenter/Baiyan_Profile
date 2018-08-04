@@ -5,6 +5,10 @@
 alias rm='rm -f'
 alias cp='cp -i'
 alias mv='mv -i'
+alias kk='ls -alF'
+alias kl='ls -alF'
+alias lk='ls -alF'
+alias du='du -h --max-depth=1'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -15,7 +19,7 @@ fi
 
 #export LM_LICENSE_FILE=27002@192.168.6.6
 
-#export SYNOPSYS=/root/simulation/install_path/synopsys/tx
+export SYNOPSYS=/root/simulation/install_path/synopsys
 
 export SNPSLMD_LICENSE_FILE=1701@166.111.77.2
 
@@ -61,10 +65,12 @@ alias strc='StarXtract'
 #alias bkup="backup"
 
 # added by Anaconda2 4.4.0 installer 
-export PATH="/home/zdr/anaconda2/bin:$PATH"
+export PATH="/home/rsh/anaconda2/bin:$PATH"
 
+alias g="gvim -p"
 alias gopen="gnome-open"
-alias py='python'
+alias py="/home/rsh/anaconda2/bin/python"
+#alias py="python"
 
 source /home/rsh/OpenSPARCT1/OpenSPARCT1.bash
 
